@@ -165,6 +165,43 @@ button:focus {
 
 /* End Gradient Area css
 ============================================================================================ */
+.cv_btn{
+  display: none;
+  color: #fff;
+  letter-spacing: 0px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 46px;
+  outline: none !important;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+  border: double 2px transparent;
+  box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3); }
+  .cv_btn span {
+    padding: 0 42px; }
+  .cv.tr-bg {
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid transparent;
+    color: #222222;
+    box-shadow: none; }
+    .cv_btn.tr-bg:hover {
+      background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+      border: double 2px transparent;
+      color: #ffffff;
+      box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3); }
+  .cv_btn:hover {
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: 2px solid #854fee;
+    color: #222222;
+    box-shadow: none;
+    background-clip: border-box; }
+
 .primary_btn {
   display: inline-block;
   color: #fff;
@@ -2895,6 +2932,9 @@ h6 {
   .header_area .navbar .primary_btn {
     margin-left: 40px; }
 
+  .cv_btn{
+    margin-left: 40px;
+  }
   .home_banner_area .banner_inner .banner_content h2 br {
     display: none;
     font-size: 36px; }
@@ -3062,7 +3102,7 @@ h6 {
   .home_banner_area .banner_inner .home_left_img {
     display: none; }
 
-  .header_area .navbar .primary_btn {
+  .header_area .navbar .primary-btn{
     display: none; }
 
   .left_side_text {
@@ -3073,7 +3113,9 @@ h6 {
     margin: 0px auto 30px; }
 
   .price_inner {
-    margin-bottom: -30px; } }
+    margin-bottom: -30px; } 
+}
+
 @media (max-width: 767px) {
   .home_banner_area {
     min-height: 300px; }
@@ -3088,6 +3130,11 @@ h6 {
     .home_banner_area .banner_inner .banner_content .primary_btn {
       display: none; }
 
+  .cv_btn
+  {
+    display : inline-block;
+  }
+  
   /* Blog Page Area css
   ============================================================================================ */
   .blog_info.text-right {
